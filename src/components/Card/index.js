@@ -3,7 +3,7 @@ import React from "react";
 import "./card.css";
 
 const Card = ({song}) => {
-    const {img,title,artist} =song;
+    const { img,name, pod} =song;
   return (
     <div className="card">
       <div
@@ -15,9 +15,9 @@ const Card = ({song}) => {
         }}
       ></div>
       <div className="cardDesc">
-        <span className="cardTitle">{title}</span>
+        <span className="cardTitle">{name}</span>
         <br />
-        <span className="cardAlbum">{artist}</span>
+        <span className="cardAlbum">{pod}</span>
       </div>
     </div>
   );
